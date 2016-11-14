@@ -1,0 +1,20 @@
+/* Empty. Add your own CSS if you like */
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+
+/*tab icon*/
+.tab-nav .icon { background-size: contain; background-repeat: no-repeat; background-position: center center;}
+.tab-nav .ion-topic { background-image: url(../img/tab/tab0/tb_0@2x.png);  }
+.tab-nav .ion-topic-active { background-image: url(../img/tab/tab0/tb_0_selected@2x.png);  }
+.tab-nav .ion-picture { background-image: url(../img/tab/tab1/tb_1@2x.png);  }
+.tab-nav .ion-picture-active { background-image: url(../img/tab/tab1/tb_1_selected@2x.png);  }
+.tab-nav .ion-communication { background-image: url(../img/tab/tab2/tb_2@2x.png);  }
+.tab-nav .ion-communication-active { background-image: url(../img/tab/tab2/tb_2_selected@2x.png);  }
+.tab-nav .ion-shop { background-image: url(../img/tab/tab4/tb_3@2x.png);  }
+.tab-nav .ion-shop-active { background-image: url(../img/tab/tab4/tb_3@2x.png);  }
+.tab-nav .ion-account { background-image: url(../img/tab/tab4/tb_4@2x.png);  }
+.tab-nav .ion-account-active { background-image: url(../img/tab/tab4/tb_4@2x.png);  }

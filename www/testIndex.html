@@ -1,0 +1,109 @@
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>Tabs Example</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/testIndex.js"></script>
+  </head>
+
+  <body ng-app="ionicApp" ng-controller="HomeTabCtrl">
+
+    <ion-nav-bar class="bar-floral">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
+    <ion-nav-view></ion-nav-view>
+    <script id="templates/tabs.html" type="text/ng-template">
+      <ion-tabs class="tabs-icon-top tabs-floral">
+        <ion-tab title="专题" icon-off="ion-topic" icon-on="ion-topic-active" href="#/tab/topic">
+          <ion-nav-view name="topic-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="壁纸" icon-off="ion-picture" icon-on="ion-picture-active" href="#/tab/picture">
+          <ion-nav-view name="picture-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="社区" icon-off="ion-communication" icon-on="ion-communication-active" href="#/tab/communication">
+          <ion-nav-view name="communication-tab"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="商城" icon-off="ion-shop" icon-on="ion-shop-active" href="#/tab/shop">
+          <ion-nav-view name="shop-tab"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="我的" icon-off="ion-account" icon-on="ion-account-active" href="#/tab/account">
+          <ion-nav-view name="account-tab"></ion-nav-view>
+        </ion-tab>
+      </ion-tabs>
+    </script>
+
+    <script id="templates/topic.html" type="text/ng-template">
+      <ion-view view-title="Topic">
+        <ion-content class="padding">
+          <p>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/account">Scientific account</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/picture.html" type="text/ng-template">
+      <ion-view view-title="Picture">
+        <ion-content class="padding">
+          <p>Banging your head against a wall uses 150 calories an hour.</p>
+          <p>Dogs have four toes on their hind feet, and five on their front feet.</p>
+          <p>The ant can lift 50 times its own weight, can pull 30 times its own weight and always falls over on its right side when intoxicated.</p>
+          <p>A cockroach will live nine days without it's head, before it starves to death.</p>
+          <p>Polar bears are left handed.</p>
+          <p>
+            <a class="button icon ion-topic" href="#/tab/topic"> Home</a>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/facts2">More Facts</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/communication.html" type="text/ng-template">
+      <ion-view view-title="Communication">
+        <ion-content class="padding">
+          <p>111,111,111 x 111,111,111 = 12,345,678,987,654,321</p>
+          <p>1 in every 4 Americans has appeared on T.V.</p>
+          <p>11% of the world is left-handed.</p>
+          <p>1 in 8 Americans has worked at a McDonalds restaurant.</p>
+          <p>$283,200 is the absolute highest amount of money you can win on Jeopardy.</p>
+          <p>101 Dalmatians, Peter Pan, Lady and the Tramp, and Mulan are the only Disney cartoons where both parents are present and don't die throughout the movie.</p>
+          <p>
+            <a class="button icon ion-chevron-left" href="#/tab/topic"> Home</a>
+            <a class="button icon ion-chevron-left" href="#/tab/facts"> Scientific Facts</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/shop.html" type="text/ng-template">
+      <ion-view view-title="About">
+        <ion-content class="padding">
+          <h3>Create hybrid mobile apps with the web technologies you love.</h3>
+          <p>Free and open source, Ionic offers a library of mobile-optimized HTML, CSS and JS components for building highly interactive apps.</p>
+          <p>Built with Sass and optimized for AngularJS.</p>
+          <p>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/navstack">Tabs Nav Stack</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/account.html" type="text/ng-template">
+      <ion-view view-title="Contact">
+        <ion-content class="padding">
+          <p><img src="http://ionicframework.com/img/diagrams/tabs-nav-stack.png" style="width:100%"></p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+  </body>
+</html>
